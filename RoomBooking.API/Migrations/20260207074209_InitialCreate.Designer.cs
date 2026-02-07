@@ -11,7 +11,7 @@ using RoomBooking.API.Data;
 namespace RoomBooking.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260207071440_InitialCreate")]
+    [Migration("20260207074209_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -30,7 +30,7 @@ namespace RoomBooking.API.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("JamSelesao")
+                    b.Property<string>("JamSelesai")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -39,6 +39,10 @@ namespace RoomBooking.API.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NRP")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NamaPeminjam")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -55,7 +59,7 @@ namespace RoomBooking.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PeminjamanRuanganList");
+                    b.ToTable("PeminjamanRuangan");
                 });
 #pragma warning restore 612, 618
         }

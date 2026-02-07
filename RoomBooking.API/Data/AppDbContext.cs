@@ -12,7 +12,7 @@ namespace RoomBooking.API.Data
             : base(options)
         {
         }
-        public DbSet<PeminjamanRuangan> PeminjamanRuanganList { get; set; } 
+        public DbSet<PeminjamanRuangan> PeminjamanRuangan { get; set; } 
         // Buat tabel bernama PeminjamanRuangan berdasarkan model class PeminjamanRuangan
         // DbSet = Kumpulan data dari tabel itu
     }
@@ -31,10 +31,7 @@ namespace RoomBooking.API.Data
 //5. Controller = API akses data
 //GET /api/peminjaman
 //POST /api/peminjaman
-//🧭 Gambaran besar alurnya
-//Model → DbContext → Migration → Database
-//         ↓
-//      Controller → API → Postman/Frontend
+
 
 
 

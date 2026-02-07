@@ -1,6 +1,11 @@
 # Room Booking System - Backend
 
-Backend API untuk Sistem Peminjaman Ruangan Kampus  
-Dikembangkan menggunakan ASP.NET (akan diimplementasikan).
+Backend API untuk Sistem Peminjaman Ruangan Kampus menggunakan ASP.NET Core Web API.
 
-Catatan: Instruksi migration pada modul menggunakan contoh Laravel. Pada implementasi ASP.NET Core, migration dilakukan menggunakan Entity Framework Core.
+## Fitur
+- CRUD Peminjaman Ruangan
+- Database SQLite + Entity Framework Core Migration
+- Swagger API Documentation
+
+## Menjalankan Project
+dotnet run

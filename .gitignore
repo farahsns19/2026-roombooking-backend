@@ -1,0 +1,23 @@
+# ASP.NET Core
+RoomBooking.API/bin/
+RoomBooking.API/obj/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+EOF
+
+# Database SQLite
+*.db
+
